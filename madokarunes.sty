@@ -1,11 +1,11 @@
 \makeatletter
 \def\Madoka#1{\@tfor\ch:=#1\do{%
-\if\ch A\includegraphics[height=1zw]{MadokaArchaic/Archaic_Ä.pdf}\else{%
-\if\ch O\includegraphics[height=1zw]{MadokaArchaic/Archaic_Ö.pdf}\else{%
-\if\ch U\includegraphics[height=1zw]{MadokaArchaic/Archaic_Ü.pdf}\else{%
-\if\ch S\includegraphics[height=0.8zw]{MadokaArchaic/Archaic_SS.pdf}\else{%
-\ifcat\ch a\includegraphics[height=0.8zw]{MadokaArchaic/Archaic_\ch.pdf}\else{%
-\ifcat\ch 0\includegraphics[height=0.8zw]{MadokaArchaic/Runes_\ch.pdf}\else{%
+\if\ch A\includegraphics[height=2ex]{MadokaArchaic/Archaic_Ä.pdf}\else{%
+\if\ch O\includegraphics[height=2ex]{MadokaArchaic/Archaic_Ö.pdf}\else{%
+\if\ch U\includegraphics[height=2ex]{MadokaArchaic/Archaic_Ü.pdf}\else{%
+\if\ch S\includegraphics[height=1.6ex]{MadokaArchaic/Archaic_SS.pdf}\else{%
+\ifcat\ch a\includegraphics[height=1.6ex]{MadokaArchaic/Archaic_\ch.pdf}\else{%
+\ifcat\ch 0\includegraphics[height=1.6ex]{MadokaArchaic/Runes_\ch.pdf}\else{%
 \ch}\fi}\fi}\fi}\fi}\fi}\fi}}
 
 \def\MadokaM#1{\@tfor\ch:=#1\do{%
@@ -17,6 +17,6 @@
 \if\ch O\ch\else{%
 \if\ch U\ch\else{%
 \if\ch S\ch\else{%
-\ifcat\ch a\includegraphics[height=0.8zw]{MadokaMusical/Musical_\ch.pdf}\kern.1em\else{%
+\ifcat\ch a\includegraphics[height=1.6ex]{MadokaMusical/Musical_\ch.pdf}\kern.1em\else{%
 \ch}\fi}\fi}\fi}\fi}\fi}\fi}\fi}\fi}\fi}}
 \makeatother
