@@ -1,12 +1,21 @@
+\usepackage{graphicx}
+
+\newlength{\eA}
+\settowidth{\eA}{A}
+
 \makeatletter
 \def\Madoka#1{\@tfor\ch:=#1\do{%
-\if\ch A\includegraphics[height=2ex]{MadokaArchaic/Archaic_Ä.pdf}\else{%
-\if\ch O\includegraphics[height=2ex]{MadokaArchaic/Archaic_Ö.pdf}\else{%
-\if\ch U\includegraphics[height=2ex]{MadokaArchaic/Archaic_Ü.pdf}\else{%
-\if\ch S\includegraphics[height=1.6ex]{MadokaArchaic/Archaic_SS.pdf}\else{%
-\ifcat\ch a\includegraphics[height=1.6ex]{MadokaArchaic/Archaic_\ch.pdf}\else{%
-\ifcat\ch 0\includegraphics[height=1.6ex]{MadokaArchaic/Runes_\ch.pdf}\else{%
-\ch}\fi}\fi}\fi}\fi}\fi}\fi}}
+\if\ch A\includegraphics[height=1.25\eA]{MadokaArchaic/Archaic_Ä.pdf}\else{%
+\if\ch O\includegraphics[height=1.25\eA]{MadokaArchaic/Archaic_Ö.pdf}\else{%
+\if\ch U\includegraphics[height=1.25\eA]{MadokaArchaic/Archaic_Ü.pdf}\else{%
+\if\ch S\includegraphics[height=1\eA]{MadokaArchaic/Special/Archaic_SS.pdf}\else{%
+\if\ch .\kern.1em\includegraphics[height=.5ex]{MadokaArchaic/Special/Archaic_Period.pdf}\kern.2em\else{%
+\if\ch ,\kern.1em\raisebox{-.5ex}{\includegraphics[height=1ex]{MadokaArchaic/Special/Archaic_Comma.pdf}}\kern.2em\else{%
+\if\ch ?\includegraphics[height=1.25\eA]{MadokaArchaic/Special/Archaic_Question.pdf}\else{%
+\if\ch *\includegraphics[height=1.25\eA]{MadokaArchaic/Special/Archaic_Asterisk.pdf}\else{%
+\ifcat\ch a\includegraphics[height=1\eA]{MadokaArchaic/Archaic_\ch.pdf}\else{%
+\ifcat\ch 0\includegraphics[height=1\eA]{MadokaArchaic/Runes_\ch.pdf}\else{%
+\ch}\fi}\fi}\fi}\fi}\fi}\fi}\fi}\fi}\fi}\fi}}
 
 \def\MadokaM#1{\@tfor\ch:=#1\do{%
 \if\ch j\ch\else{%
@@ -17,6 +26,6 @@
 \if\ch O\ch\else{%
 \if\ch U\ch\else{%
 \if\ch S\ch\else{%
-\ifcat\ch a\includegraphics[height=1.6ex]{MadokaMusical/Musical_\ch.pdf}\kern.1em\else{%
+\ifcat\ch a\includegraphics[height=1\eA]{MadokaMusical/Musical_\ch.pdf}\kern.1em\else{%
 \ch}\fi}\fi}\fi}\fi}\fi}\fi}\fi}\fi}\fi}}
 \makeatother
