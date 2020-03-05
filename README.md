@@ -3,5 +3,5 @@ Add two commands to print the runes appearing in the series, "*Puella Magi Madok
 # Usage
 For archaic letters, use *\Madoka*, and for musical letters, use *\MadokaM*.  
 Some symbols are ready with archaic.
-1. Letters with diaeresis can be used with *A*, *O*, and *U*.
-2. *.,:;!?\*PXAT* is for *.,:;!?\*%&@~*
+1. Letters with diaeresis can be used with *A*, *I*, *U*, *E*, and *O*.
+2. Some charactors can be written with unique charactors. (See: madokarunes.sty)
